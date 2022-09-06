@@ -1,11 +1,13 @@
 let url = window.location.href;
-let swLocation = 'twittorD/sw.js';
+let swLocation = '/twittor/sw.js';
 
 // registrando serviceworker
 if (navigator.serviceWorker) {
-  if (url.includes('localhost')) {
+
+  if(url.includes('localholst')){
     swLocation = '/sw.js';
   }
+
   navigator.serviceWorker.register(swLocation);
 }
 
