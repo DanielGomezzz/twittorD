@@ -1,10 +1,9 @@
 let url = window.location.href;
-let swLocation = '/twittor/sw.js';
+let swLocation = '/twittorD/sw.js';
 
 // registrando serviceworker
 if (navigator.serviceWorker) {
-
-  if(url.includes('localholst')){
+  if (url.includes('localholst')) {
     swLocation = '/sw.js';
   }
 
@@ -122,5 +121,4 @@ postBtn.on('click', function () {
 
   crearMensajeHTML(mensaje, usuario);
 });
-
 
