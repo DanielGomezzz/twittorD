@@ -1,5 +1,5 @@
 let url = window.location.href;
-let swLocation = '/twittorD/sw.js';
+let swLocation = 'twittorD/sw.js';
 
 // registrando serviceworker
 if (navigator.serviceWorker) {
